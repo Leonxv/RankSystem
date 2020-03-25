@@ -1,0 +1,18 @@
+---
+groups:
+  player:
+    default: true
+    rank: 0
+    parents: []
+    format: "§b{group} §f{displayname}§f>> {msg}"
+    permissions:
+    - player.group.permissions
+  owner:
+    default: false
+    rank: 1
+    parents:
+    - player
+    format: "§4{group} §f{displayname} §a{msg}"
+    permissions:
+    - owner.group.permissions
+...

@@ -1,0 +1,20 @@
+name: RankSystem
+main: rank\Main
+author: 
+- Aleondev
+- DevL
+version: 1.0
+api: 3.0.0
+
+permissions:
+ rang.comand:
+   default: op
+   children:
+     rang.command.general:
+       default: op
+     rang.command.set:
+       default: op
+     rang.command.users:
+       default: op
+     rang.command.general:
+       default: op
