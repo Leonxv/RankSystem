@@ -14,7 +14,7 @@ use rank\listeners\{
 	JoinListener, QuitListener, ChatListener
 };
 use rank\commands\{
-	PexCommand
+	RankCommand
 };
 use rank\task\GroupsTask;
 
