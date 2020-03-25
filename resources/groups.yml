@@ -4,7 +4,7 @@ groups:
     default: true
     rank: 0
     parents: []
-    format: "§b{group} §f{displayname}§f>> {msg}"
+    format: "§b[{group}] §f{displayname}§f>> {msg}"
     permissions:
     - player.group.permissions
   owner:
