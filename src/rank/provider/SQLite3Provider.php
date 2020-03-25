@@ -15,11 +15,10 @@ class SQLite3Provider implements Provider {
 	public function __construct() {
 		$this->init();
 	}
-	
 	private function init() : void {
 		$this->db = $db = new \SQLite3(Main::getInstance()->getDataFolder(). 'DataBase.db');
-		$db->exec("Save Group");
-		$db->exec("Save Permission");
+		$db->exec("CREATE TABLE IF NOT EXISTS groups(nick TEXT, groupName TEXT, expiryDate TEXT)");
+		$db->exec("CREATE TABLE IF NOT EXISTS permissions(nick TEXT, permission TEXT, expiryDate TEXT)");
 	}
 	
 	public function getPlayerGroups(IPlayer $player) : array {
